@@ -11,7 +11,7 @@ def get_fruityvice_data(this_fruit_choice):
        return fruityvice_normalized
 
 def get_fruit_load_list():
-       with my_cnx.cursor() as my_cur
+       with my_cnx.cursor() as my_cur:
        my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
        my_data_rows = my_cur.fetchall()
 
