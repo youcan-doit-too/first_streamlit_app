@@ -13,7 +13,7 @@ def get_fruityvice_data(this_fruit_choice):
 def get_fruit_load_list():
        with my_cnx.cursor() as my_cur:
             my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
-            my_data_rows = my_cur.fetchall()
+            return my_cur.fetchall()
 
 #main code
 streamlit.title("My Parents New healthy Diner!")
